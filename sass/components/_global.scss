@@ -31,6 +31,14 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include phone {
+    width: 480px;
+  }
 }
 
 .list {
@@ -42,6 +50,21 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include phone {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .section-title {

@@ -1,5 +1,9 @@
 .section.border {
   border-top: 1px solid #ececec;
+
+  @include tablet {
+    display: none;
+  }
 }
 .specialization-list {
   display: flex;
