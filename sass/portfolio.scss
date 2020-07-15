@@ -1,3 +1,55 @@
+$phone-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+//Responsive mixin
+
+// 1199+1=1200 c
+@mixin desktop {
+   @media (min-width: #{$desktop-width}) {
+      @content;
+   }
+}
+
+//  1199 do
+@mixin tablet {
+   @media (max-width: #{$desktop-width - 1}) {
+      @content;
+   }
+}
+
+// 767 do
+@mixin phone {
+   @media (max-width: #{$tablet-width - 1}) {
+      @content;
+   }
+}
+
+//  480-1=479 do
+@mixin ldphone {
+   @media (max-width: #{$phone-width - 1px}) {
+      @content;
+   }
+}
+
+//Fonsize mixin
+
+@mixin fontsize($desktop, $lgdesktop, $tablet, $phone) {
+   font-size: $lgdesktop !important;
+
+   @include lgdesktop {
+      font-size: $desktop !important;
+   }
+
+   @include tablet {
+      font-size: $tablet !important;
+   }
+
+   @include phone {
+      font-size: $phone !important;
+   }
+}
+
 @import "./utils/variables";
 @import "./utils/normalize";
 @import "./components/global";
@@ -5,4 +57,4 @@
 @import "./components/filter";
 @import "./components/portfolio";
 
-@import "./components/footer";
+@import "./components/footerrrrr";

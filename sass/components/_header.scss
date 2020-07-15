@@ -71,8 +71,16 @@
   display: flex;
   margin-left: auto;
 
+  @include tablet {
+    display: block;
+  }
+
   .item + .item {
     margin-left: 30px;
+
+    @include tablet {
+      margin-left: 0;
+    }
   }
   .link {
     display: inline-flex;
@@ -91,6 +99,15 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include tablet {
+      padding: 0 0 10px 0;
+
+      &:nth-child(even) {
+        padding-bottom: 0;
+      }
+    }
+
     &:hover,
     &:focus {
       color: $accentColor;
@@ -100,5 +117,27 @@
 .nav {
   &.border {
     border-bottom: 1px solid #ececec;
+  }
+}
+
+// burger
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  .icon-close {
+    display: none;
+  }
+}
+
+.menu-button.is-open {
+  .is-open {
+    display: block;
+  }
+  .icon-menu {
+    display: none;
   }
 }

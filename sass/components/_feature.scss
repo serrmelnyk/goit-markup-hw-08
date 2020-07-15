@@ -72,17 +72,6 @@
     margin-right: 30px;
     margin-bottom: 0;
 
-    @include phone {
-      width: calc;
-      width: 450px;
-      margin-right: 0;
-      margin-bottom: 30px !important;
-
-      &:nth-child(4n) {
-        margin-bottom: 0;
-      }
-    }
-
     @include tablet {
       width: 354px;
       margin-bottom: 30px;
@@ -92,6 +81,16 @@
       }
       &:nth-child(3),
       &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include phone {
+      width: 450px;
+      margin-right: 0;
+      margin-bottom: 30px;
+
+      &:nth-child(4n) {
         margin-bottom: 0;
       }
     }

@@ -6,6 +6,19 @@ footer {
 .adress-list {
   margin-right: 69px;
 
+  @include tablet {
+    text-align: center;
+  }
+
+  @include phone {
+    text-align: center;
+    margin: 0 0 60px 0;
+  }
+
+  @include ldphone {
+    text-align: center;
+  }
+
   .logo {
     color: $whiteColor;
 
@@ -15,6 +28,13 @@ footer {
 
     display: inline-block;
     margin-bottom: 10px;
+
+    @include phone {
+      margin-bottom: 20px;
+    }
+    @include ldphone {
+      margin-bottom: 20px;
+    }
   }
   .title {
     color: $whiteColor;
@@ -22,6 +42,10 @@ footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+
+    @include phone {
+      margin-bottom: 8px;
+    }
   }
   .link {
     color: rgba(255, 255, 255, 0.6);
@@ -53,15 +77,41 @@ footer {
   text-transform: uppercase;
 
   display: inline-block;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 // footer E-mail
+.footer-mail {
+  margin-bottom: 50px;
+}
+
 .footer-link {
   margin-left: 94px;
+
+  @include tablet {
+    text-align: center;
+    margin: 0 0 102px 165px;
+
+    &:nth-child(odd) {
+      margin-bottom: 0;
+    }
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+  }
+
+  @include phone {
+    text-align: center;
+    margin: 0;
+  }
 }
 .form-mail {
-  display: flex;
+  display: block;
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .mail-input {
@@ -85,6 +135,14 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0);
   outline: none;
+
+  @include tablet {
+    width: 450px;
+  }
+
+  @include phone {
+    margin-bottom: 20px;
+  }
 }
 .button-mail {
   position: relative;
@@ -111,6 +169,12 @@ footer {
   text-decoration: none;
 
   cursor: pointer;
+
+  @include phone {
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 .button-img {
   position: absolute;
@@ -139,17 +203,42 @@ footer {
 }
 .page-footer {
   display: flex;
-  flex-wrap: nowrap;
-  padding-top: 48px;
+  flex-wrap: wrap;
+  padding-top: 60px;
   padding-bottom: 28px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+
+  @include tablet {
+    width: 768px;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+
+  @include phone {
+    flex-direction: column;
+    width: 480px;
+    padding: 60px 15px 28px 15px;
+  }
+
+  @include ldphone {
+    flex-direction: column;
+  }
 }
 .footer-link .list {
   display: flex;
   justify-content: space-evenly;
+
+  @include phone {
+    justify-content: center;
+    margin: 0 0 60px 0;
+  }
 }
 .icon-footer {
   display: flex;
