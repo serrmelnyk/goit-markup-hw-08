@@ -22,8 +22,41 @@
           <a href="./index.html" class="logo"
             ><span class="accent">Web</span> Studio</a
           >
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+            <ul class="auth-nav list">
+              <li class="item">
+                <a href="" class="link">
+                  <svg class="icon-header" width="16px" height="11px">
+                    <use href="./imeges/sprite.svg#envelope"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="" class="link"
+                  ><svg class="icon-header" width="10px" height="15px">
+                    <use href="./imeges/sprite.svg#smartphone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
 
-          <button type="button" class="menu-button is-open" data-menu-button>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
             <svg
               width="40px"
               height="40px"
@@ -33,32 +66,6 @@
               <use class="icon-menu" href="./imeges/sprite.svg#menu"></use>
             </svg>
           </button>
-
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
-          <ul class="auth-nav list">
-            <li class="item">
-              <a href="" class="link">
-                <svg class="icon-header" width="16px" height="11px">
-                  <use href="./imeges/sprite.svg#envelope"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a href="" class="link"
-                ><svg class="icon-header" width="10px" height="15px">
-                  <use href="./imeges/sprite.svg#smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </div>
       </nav>
     </header>
@@ -548,5 +555,6 @@
     </script>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

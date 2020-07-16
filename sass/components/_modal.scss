@@ -31,11 +31,15 @@
   min-width: 528px;
 
   background-color: $whiteColor;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    min-height: 609px;
+    min-width: 450px;
+  }
 }
 
 .modal-button {
@@ -92,6 +96,14 @@
     margin-top: 40px;
 
     color: $secondaryColor;
+
+    @include tablet {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+  @include tablet {
+    width: 370px;
   }
 }
 
@@ -224,8 +236,7 @@
   letter-spacing: 0.01em;
 
   color: #757575;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field:focus-within > .form-textarea {
@@ -272,8 +283,7 @@
   border: 2px solid;
   border-color: $secondaryColor;
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agreement-check:checked + .custom-check {

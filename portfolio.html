@@ -22,29 +22,50 @@
           <a href="./index.html" class="logo"
             ><span class="accent">Web</span> Studio</a
           >
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
-          <ul class="auth-nav list">
-            <li class="item">
-              <a href="" class="link">
-                <svg class="icon-header" width="16px" height="11px">
-                  <use href="./imeges/sprite.svg#envelope"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a href="" class="link"
-                ><svg class="icon-header" width="10px" height="15px">
-                  <use href="./imeges/sprite.svg#smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+            <ul class="auth-nav list">
+              <li class="item">
+                <a href="" class="link">
+                  <svg class="icon-header" width="16px" height="11px">
+                    <use href="./imeges/sprite.svg#envelope"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="" class="link"
+                  ><svg class="icon-header" width="10px" height="15px">
+                    <use href="./imeges/sprite.svg#smartphone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-close" href="./imeges/sprite.svg#close"></use>
+              <use class="icon-menu" href="./imeges/sprite.svg#menu"></use>
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
@@ -295,8 +316,8 @@
             </li>
           </ul>
         </div>
-        <div class="footer-link">
-          <b class="footer-text">Присоединяйтесь</b>
+        <div class="sotsseti-link">
+          <b class="text">Присоединяйтесь</b>
           <ul class="list">
             <li>
               <a href="" aria-label="Ссылка на instagram" class="icon-footer"
@@ -326,25 +347,23 @@
         </div>
 
         <!-- footer E-mail -->
-        <div class="footer-link">
-          <b class="footer-text">Подпишитесь на рассылку</b>
+        <div class="mail-link">
+          <b class="text">Подпишитесь на рассылку</b>
           <form class="form-mail js-speaker-form">
-            <div class="mail-field">
-              <input
-                class="mail-input"
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="E-mail"
-                autocomplete="off"
-              />
-            </div>
-            <button class="button-mail" type="submit">
+            <input
+              class="mail-input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+              autocomplete="off"
+            />
+            <buttons class="button-mail" type="submit">
               Подписаться
               <svg class="button-img" width="24" height="24">
                 <use href="./imeges/sprite.svg#airplane"></use>
               </svg>
-            </button>
+            </buttons>
           </form>
         </div>
       </div>
@@ -353,5 +372,7 @@
         2020 &#10072; Developed by GoIT Students
       </p>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

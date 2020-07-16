@@ -28,7 +28,7 @@ footer {
 
 // adress
 .adress-list {
-   margin-right: 69px;
+   // margin-right: 69px;
 
    @include tablet {
       text-align: center;
@@ -79,7 +79,7 @@ footer {
 
 // sotsseti
 .sotsseti-link {
-   margin-left: 94px;
+   margin-left: 69px;
 
    @include tablet {
       text-align: center;
@@ -110,6 +110,14 @@ footer {
       @include phone {
          justify-content: center;
       }
+
+      // &:last-child(4n) {
+      //    .icon-footer {
+      //       @include desktop {
+      //          margin-right: 0;
+      //       }
+      //    }
+      // }
    }
 
    .icon-footer {
