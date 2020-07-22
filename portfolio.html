@@ -25,10 +25,10 @@
           <div class="menu-container" id="menu-container" data-menu>
             <ul class="site-nav list">
               <li class="item">
-                <a href="./index.html" class="link current">Студия</a>
+                <a href="./index.html" class="link">Студия</a>
               </li>
               <li class="item">
-                <a href="./portfolio.html" class="link">Портфолио</a>
+                <a href="./portfolio.html" class="link current">Портфолио</a>
               </li>
               <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
@@ -36,14 +36,14 @@
               <li class="item">
                 <a href="" class="link">
                   <svg class="icon-header" width="16px" height="11px">
-                    <use href="./imeges/sprite.svg#envelope"></use></svg
+                    <use href="./images/sprite.svg#envelope"></use></svg
                   >info@devstudio.com</a
                 >
               </li>
               <li class="item">
                 <a href="" class="link"
                   ><svg class="icon-header" width="10px" height="15px">
-                    <use href="./imeges/sprite.svg#smartphone"></use></svg
+                    <use href="./images/sprite.svg#smartphone"></use></svg
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -62,8 +62,8 @@
               height="40px"
               aria-label="Переключатель мобильного меню"
             >
-              <use class="icon-close" href="./imeges/sprite.svg#close"></use>
-              <use class="icon-menu" href="./imeges/sprite.svg#menu"></use>
+              <use class="icon-close" href="./images/sprite.svg#close"></use>
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
             </svg>
           </button>
         </div>
@@ -96,7 +96,11 @@
               <a href="" class="link">
                 <div class="fon">
                   <img
-                    src="./imeges/tehnokryak.jpg"
+                    srcset="
+                      ./images/tehnokryak_370.jpg 1x,
+                      ./images/tehnokryak_740.jpg 2x
+                    "
+                    src="./images/tehnokryak_370.jpg"
                     alt="Технокряк"
                     width="370"
                   />
@@ -118,7 +122,15 @@
             <li class="item">
               <a href="" class="link">
                 <div class="fon">
-                  <img src="./imeges/poster_new.jpg" alt="Постер" width="370" />
+                  <img
+                    srcset="
+                      ./images/poster_new_370.jpg 1x,
+                      ./images/poster_new_740.jpg 2x
+                    "
+                    src="./images/poster_new_370.jpg"
+                    alt="Постер"
+                    width="370"
+                  />
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -138,7 +150,11 @@
               <a href="" class="link">
                 <div class="fon">
                   <img
-                    src="./imeges/restaurant_seafood.jpg"
+                    srcset="
+                      ./images/restaurant_seafood_370.jpg 1x,
+                      ./images/restaurant_seafood_740.jpg 2x
+                    "
+                    src="./images/restaurant_seafood_370.jpg"
                     alt="Приложение"
                     width="370"
                   />
@@ -161,7 +177,11 @@
               <a href="" class="link">
                 <div class="fon">
                   <img
-                    src="./imeges/project_prime.jpg"
+                    srcset="
+                      ./images/project_prime_370.jpg 1x,
+                      ./images/project_prime_740.jpg 2x
+                    "
+                    src="./images/project_prime_370.jpg"
                     alt="Маркетинг"
                     width="370"
                   />
@@ -184,7 +204,11 @@
               <a href="" class="link">
                 <div class="fon">
                   <img
-                    src="./imeges/project_boxes.jpg"
+                    srcset="
+                      ./images/project_boxes_370.jpg 1x,
+                      ./images/project_boxes_740.jpg 2x
+                    "
+                    src="./images/project_boxes_370.jpg"
                     alt="Приложение"
                     width="370"
                   />
@@ -206,7 +230,15 @@
             <li class="item">
               <a href="" class="link">
                 <div class="fon">
-                  <img src="./imeges/monitor.jpg" alt="Веб-сайт" width="370" />
+                  <img
+                    srcset="
+                      ./images/monitor_370.jpg 1x,
+                      ./images/monitor_740.jpg 2x
+                    "
+                    src="./images/monitor_370.jpg"
+                    alt="Веб-сайт"
+                    width="370"
+                  />
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -226,7 +258,11 @@
               <a href="" class="link">
                 <div class="fon">
                   <img
-                    src="./imeges/edition_limited.jpg"
+                    srcset="
+                      ./images/edition_limited_370.jpg 1x,
+                      ./images/edition_limited_740.jpg 2x
+                    "
+                    src="./images/edition_limited_370.jpg"
                     alt="Дизайн"
                     width="370"
                   />
@@ -249,7 +285,11 @@
               <a href="" class="link">
                 <div class="fon">
                   <img
-                    src="./imeges/project_lab.jpg"
+                    srcset="
+                      ./images/project_lab_370.jpg 1x,
+                      ./images/project_lab_740.jpg 2x
+                    "
+                    src="./images/project_lab_370.jpg"
                     alt="Маркетинг"
                     width="370"
                   />
@@ -272,7 +312,11 @@
               <a href="" class="link">
                 <div class="fon">
                   <img
-                    src="./imeges/computer.jpg"
+                    srcset="
+                      ./images/computer_370.jpg 1x,
+                      ./images/computer_740.jpg 2x
+                    "
+                    src="./images/computer_370.jpg"
                     alt="Приложение"
                     width="370"
                   />
@@ -322,25 +366,25 @@
             <li>
               <a href="" aria-label="Ссылка на instagram" class="icon-footer"
                 ><svg width="20" height="20px">
-                  <use href="./imeges/sprite.svg#instagram"></use></svg
+                  <use href="./images/sprite.svg#instagram"></use></svg
               ></a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на Twitter" class="icon-footer"
                 ><svg width="20" height="20px">
-                  <use href="./imeges/sprite.svg#twitter"></use></svg
+                  <use href="./images/sprite.svg#twitter"></use></svg
               ></a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на Facebook" class="icon-footer"
                 ><svg width="20" height="20px">
-                  <use href="./imeges/sprite.svg#facebook"></use></svg
+                  <use href="./images/sprite.svg#facebook"></use></svg
               ></a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на linkedin" class="icon-footer"
                 ><svg width="20" height="20px">
-                  <use href="./imeges/sprite.svg#linkedin"></use></svg
+                  <use href="./images/sprite.svg#linkedin"></use></svg
               ></a>
             </li>
           </ul>
@@ -361,7 +405,7 @@
             <buttons class="button-mail" type="submit">
               Подписаться
               <svg class="button-img" width="24" height="24">
-                <use href="./imeges/sprite.svg#airplane"></use>
+                <use href="./images/sprite.svg#airplane"></use>
               </svg>
             </buttons>
           </form>

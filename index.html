@@ -36,14 +36,14 @@
               <li class="item">
                 <a href="" class="link">
                   <svg class="icon-header" width="16px" height="11px">
-                    <use href="./imeges/sprite.svg#envelope"></use></svg
+                    <use href="./images/sprite.svg#envelope"></use></svg
                   >info@devstudio.com</a
                 >
               </li>
               <li class="item">
                 <a href="" class="link"
                   ><svg class="icon-header" width="10px" height="15px">
-                    <use href="./imeges/sprite.svg#smartphone"></use></svg
+                    <use href="./images/sprite.svg#smartphone"></use></svg
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -62,8 +62,8 @@
               height="40px"
               aria-label="Переключатель мобильного меню"
             >
-              <use class="icon-close" href="./imeges/sprite.svg#close"></use>
-              <use class="icon-menu" href="./imeges/sprite.svg#menu"></use>
+              <use class="icon-close" href="./images/sprite.svg#close"></use>
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
             </svg>
           </button>
         </div>
@@ -86,7 +86,7 @@
             <li class="item">
               <div class="feature-box">
                 <svg class="icon">
-                  <use href="./imeges/sprite.svg#antenna"></use>
+                  <use href="./images/sprite.svg#antenna"></use>
                 </svg>
               </div>
               <h3 class="title">Внимание к деталям</h3>
@@ -98,7 +98,7 @@
             <li class="item">
               <div class="feature-box">
                 <svg class="icon">
-                  <use href="./imeges/sprite.svg#clock"></use>
+                  <use href="./images/sprite.svg#clock"></use>
                 </svg>
               </div>
               <h3 class="title">Пунктуальность</h3>
@@ -110,7 +110,7 @@
             <li class="item">
               <div class="feature-box">
                 <svg class="icon">
-                  <use href="./imeges/sprite.svg#diagram"></use>
+                  <use href="./images/sprite.svg#diagram"></use>
                 </svg>
               </div>
               <h3 class="title">Планирование</h3>
@@ -122,7 +122,7 @@
             <li class="item">
               <div class="feature-box">
                 <svg class="icon">
-                  <use href="./imeges/sprite.svg#astronaut"></use>
+                  <use href="./images/sprite.svg#astronaut"></use>
                 </svg>
               </div>
               <h3 class="title">Современные технологии</h3>
@@ -141,7 +141,11 @@
           <ul class="specialization-list list">
             <li class="item">
               <img
-                src="./imeges/img_1.jpg"
+                srcset="
+                  ./images/computer_370.jpg 1x,
+                  ./images/computer_740.jpg 2x
+                "
+                src="./images/computer_370.jpg"
                 alt="Десктопные приложения"
                 width="370"
               />
@@ -153,7 +157,8 @@
             </li>
             <li class="item">
               <img
-                src="./imeges/box.jpg"
+                srcset="./images/box_370.jpg 1x, ./images/box_740.jpg 2x"
+                src="./images/box_370.jpg"
                 alt="Мобильные приложения"
                 width="370"
               />
@@ -165,7 +170,11 @@
             </li>
             <li class="item">
               <img
-                src="./imeges/img.jpg"
+                srcset="
+                  ./images/monitor_370.jpg 1x,
+                  ./images/monitor_740.jpg 2x
+                "
+                src="./images/monitor_370.jpg"
                 alt="Дизайнерские решения"
                 width="370"
               />
@@ -186,9 +195,13 @@
             <li class="item">
               <img
                 class="team-list photo"
-                src="./imeges/john_smith.jpg"
+                srcset="
+                  ./images/john_smith_270.jpg 270w,
+                  ./images/john_smith_540.jpg 540w
+                "
+                src="./images/john_smith_270.jpg"
                 alt="Дизайнер продуктов"
-                width="270"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <h3 class="title">John Smith</h3>
               <p class="text">Product Designer</p>
@@ -196,25 +209,25 @@
                 <li>
                   <a href="" aria-label="cсылка на instagram" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#instagram"></use></svg
+                      <use href="./images/sprite.svg#instagram"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="ccылка на twitter" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#twitter"></use></svg
+                      <use href="./images/sprite.svg#twitter"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="cсылка на facebook" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#facebook"></use></svg
+                      <use href="./images/sprite.svg#facebook"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="cсылка на linkedin" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#linkedin"></use></svg
+                      <use href="./images/sprite.svg#linkedin"></use></svg
                   ></a>
                 </li>
               </ul>
@@ -222,7 +235,11 @@
             <li class="item">
               <img
                 class="team-list photo"
-                src="./imeges/marta_stewart.jpg"
+                srcset="
+                  ./images/marta_stewart_270.jpg 1x,
+                  ./images/marta_stewart_540.jpg 2x
+                "
+                src="./images/marta_stewart_270.jpg"
                 alt="Фронтенд Разработчик"
                 width="270"
               />
@@ -232,25 +249,25 @@
                 <li>
                   <a href="" aria-label="cсылка на instagram" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#instagram"></use></svg
+                      <use href="./images/sprite.svg#instagram"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="ccылка на twitter" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#twitter"></use></svg
+                      <use href="./images/sprite.svg#twitter"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="cсылка на facebook" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#facebook"></use></svg
+                      <use href="./images/sprite.svg#facebook"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="cсылка на linkedin" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#linkedin"></use></svg
+                      <use href="./images/sprite.svg#linkedin"></use></svg
                   ></a>
                 </li>
               </ul>
@@ -258,7 +275,11 @@
             <li class="item">
               <img
                 class="team-list photo"
-                src="./imeges/robert_jakis.jpg"
+                srcset="
+                  ./images/robert_jakis_270.jpg 1x,
+                  ./images/robert_jakis_540.jpg 2x
+                "
+                src="./images/robert_jakis_270.jpg"
                 alt="Маркетинг"
                 width="270"
               />
@@ -268,25 +289,25 @@
                 <li>
                   <a href="" aria-label="cсылка на instagram" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#instagram"></use></svg
+                      <use href="./images/sprite.svg#instagram"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="ccылка на twitter" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#twitter"></use></svg
+                      <use href="./images/sprite.svg#twitter"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="cсылка на facebook" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#facebook"></use></svg
+                      <use href="./images/sprite.svg#facebook"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="cсылка на linkedin" class="icon-team"
                     ><svg width="20" height="20px">
-                      <use href="./imeges/sprite.svg#linkedin"></use></svg
+                      <use href="./images/sprite.svg#linkedin"></use></svg
                   ></a>
                 </li>
               </ul>
@@ -294,7 +315,11 @@
             <li class="item">
               <img
                 class="team-list photo"
-                src="./imeges/martin_doe.jpg"
+                srcset="
+                  ./images/martin_doe_270.jpg 1x,
+                  ./images/martin_doe_540.jpg 2x
+                "
+                src="./images/martin_doe_270.jpg"
                 alt="Дизайнер"
                 width="270"
               />
@@ -304,25 +329,25 @@
                 <li>
                   <a href="" aria-label="cсылка на instagram" class="icon-team"
                     ><svg width="20" height="20">
-                      <use href="./imeges/sprite.svg#instagram"></use></svg
+                      <use href="./images/sprite.svg#instagram"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="ccылка на twitter" class="icon-team"
                     ><svg width="20" height="20">
-                      <use href="./imeges/sprite.svg#twitter"></use></svg
+                      <use href="./images/sprite.svg#twitter"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="cсылка на facebook" class="icon-team"
                     ><svg width="20" height="20">
-                      <use href="./imeges/sprite.svg#facebook"></use></svg
+                      <use href="./images/sprite.svg#facebook"></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" aria-label="cсылка на linkedin" class="icon-team"
                     ><svg width="20" height="20">
-                      <use href="./imeges/sprite.svg#linkedin"></use></svg
+                      <use href="./images/sprite.svg#linkedin"></use></svg
                   ></a>
                 </li>
               </ul>
@@ -338,37 +363,37 @@
             <li class="item">
               <a href="" class="icon-customers"
                 ><svg width="44" height="49">
-                  <use href="./imeges/sprite.svg#logo_1"></use></svg
+                  <use href="./images/sprite.svg#logo_1"></use></svg
               ></a>
             </li>
             <li class="item">
               <a href="" class="icon-customers"
                 ><svg width="40" height="52">
-                  <use href="./imeges/sprite.svg#logo_2"></use></svg
+                  <use href="./images/sprite.svg#logo_2"></use></svg
               ></a>
             </li>
             <li class="item">
               <a href="" class="icon-customers"
                 ><svg width="41" height="43">
-                  <use href="./imeges/sprite.svg#logo_3"></use></svg
+                  <use href="./images/sprite.svg#logo_3"></use></svg
               ></a>
             </li>
             <li class="item">
               <a href="" class="icon-customers"
                 ><svg width="80" height="42">
-                  <use href="./imeges/sprite.svg#logo_4"></use></svg
+                  <use href="./images/sprite.svg#logo_4"></use></svg
               ></a>
             </li>
             <li class="item">
               <a href="" class="icon-customers"
                 ><svg width="59" height="47">
-                  <use href="./imeges/sprite.svg#logo_5"></use></svg
+                  <use href="./images/sprite.svg#logo_5"></use></svg
               ></a>
             </li>
             <li class="item">
               <a href="" class="icon-customers"
                 ><svg width="88" height="45px">
-                  <use href="./imeges/sprite.svg#logo_6"></use></svg
+                  <use href="./images/sprite.svg#logo_6"></use></svg
               ></a>
             </li>
           </ul>
@@ -379,7 +404,7 @@
         <div class="modal">
           <button class="modal-button" data-modal-close>
             <svg class="modal-icon">
-              <use href="./imeges/sprite.svg#x"></use>
+              <use href="./images/sprite.svg#x"></use>
             </svg>
           </button>
 
@@ -401,7 +426,7 @@
                   <use
                     width="12px"
                     height="12px"
-                    href="./imeges/sprite.svg#name"
+                    href="./images/sprite.svg#name"
                   ></use>
                 </svg>
               </span>
@@ -415,7 +440,7 @@
                   <use
                     width="14px"
                     height="14px"
-                    href="./imeges/sprite.svg#tel"
+                    href="./images/sprite.svg#tel"
                   ></use></svg
               ></span>
             </label>
@@ -433,7 +458,7 @@
                   <use
                     width="16px"
                     height="12px"
-                    href="./imeges/sprite.svg#mail"
+                    href="./images/sprite.svg#mail"
                   ></use>
                 </svg>
               </span>
@@ -487,25 +512,25 @@
             <li>
               <a href="" aria-label="Ссылка на instagram" class="icon-footer"
                 ><svg width="20" height="20px">
-                  <use href="./imeges/sprite.svg#instagram"></use></svg
+                  <use href="./images/sprite.svg#instagram"></use></svg
               ></a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на Twitter" class="icon-footer"
                 ><svg width="20" height="20px">
-                  <use href="./imeges/sprite.svg#twitter"></use></svg
+                  <use href="./images/sprite.svg#twitter"></use></svg
               ></a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на Facebook" class="icon-footer"
                 ><svg width="20" height="20px">
-                  <use href="./imeges/sprite.svg#facebook"></use></svg
+                  <use href="./images/sprite.svg#facebook"></use></svg
               ></a>
             </li>
             <li>
               <a href="" aria-label="Ссылка на linkedin" class="icon-footer"
                 ><svg width="20" height="20px">
-                  <use href="./imeges/sprite.svg#linkedin"></use></svg
+                  <use href="./images/sprite.svg#linkedin"></use></svg
               ></a>
             </li>
           </ul>
@@ -526,7 +551,7 @@
             <buttons class="button-mail" type="submit">
               Подписаться
               <svg class="button-img" width="24" height="24">
-                <use href="./imeges/sprite.svg#airplane"></use>
+                <use href="./images/sprite.svg#airplane"></use>
               </svg>
             </buttons>
           </form>

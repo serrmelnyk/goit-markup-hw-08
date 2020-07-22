@@ -396,8 +396,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 0 15px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -407,6 +406,8 @@ img {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   /* Site-nav */
   /* Auth-nav */
 }
@@ -469,6 +470,7 @@ img {
 
 @media (max-width: 767px) {
   .menu-container .site-nav .link {
+    font-size: 16px;
     display: inline-block;
     position: relative;
     margin-bottom: 32px;
@@ -601,6 +603,9 @@ img {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 1;
+    -webkit-box-shadow: 0 10px 20px 0px #d0d0d0;
+            box-shadow: 0 10px 20px 0px #d0d0d0;
   }
 }
 
@@ -652,8 +657,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.8);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../imeges/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../imeges/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -930,6 +935,7 @@ img {
 }
 
 .team-list .photo {
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -960,37 +966,6 @@ img {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  position: relative;
-}
-
-.team-list .item:before {
-  content: "+";
-  position: absolute;
-  left: 0;
-  top: -30px;
-  border-top: 3px dashed red;
-  font-size: 26px;
-  color: red;
-  width: 100%;
-  text-align: left;
-  padding-left: 40px;
-}
-
-.team-list .item:after {
-  content: "++++";
-  position: absolute;
-  left: 0;
-  bottom: 60px;
-  border-top: 3px dashed red;
-  font-size: 26px;
-  color: red;
-  width: 100%;
-  text-align: right;
-  padding-left: 40px;
-}
-
-.team-list .item:hover:before {
-  display: none;
 }
 
 @media (max-width: 1199px) {
@@ -1270,6 +1245,10 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.sotsseti-link .list li:last-child a {
+  margin-right: 0;
 }
 
 .sotsseti-link .icon-footer {
@@ -1756,7 +1735,7 @@ footer {
   height: 15px;
   margin-right: 9px;
   background-origin: border-box;
-  background-image: url(../imeges/checked.svg);
+  background-image: url(../images/checked.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
